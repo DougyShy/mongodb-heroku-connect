@@ -10,6 +10,10 @@ app.get("api/hello", (req, res) => {
   console.log("HERE IN API/HELLO");
 });
 
+app.get("/", (req, res) => {
+  console.log("HERE IN API/HELLO");
+});
+
 // Catch-all route for your SPA (important for history mode)
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "dist", "index.html"));
